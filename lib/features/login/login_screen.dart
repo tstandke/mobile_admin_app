@@ -58,7 +58,7 @@ class _LoginScreenState extends State<LoginScreen> {
           .get();
 
       if (doc.exists) {
-        final level = doc.data()?['level'];
+        final level = doc.data()?['auth_level'];
         if (['Admin', 'Master', 'Standard'].contains(level)) {
           if (context.mounted) {
             Navigator.of(context).pushReplacement(
