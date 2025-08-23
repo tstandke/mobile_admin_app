@@ -6,7 +6,7 @@
 *.log
 *.pyc
 *.swp
-*.bak
+*.bak*
 *.orig
 .buildlog/
 .history
