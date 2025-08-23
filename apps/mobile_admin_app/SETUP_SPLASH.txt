@@ -1,0 +1,17 @@
+To use the default Flutter logo on the native splash (Android/iOS):
+
+1) Replace assets/icon/flutter_logo.png with the official Flutter logo PNG (transparent background).
+   - Recommended size: ~512x512 (square), transparent PNG.
+
+2) From the app directory, run:
+     dart run flutter_native_splash:create
+
+3) Rebuild the app:
+     flutter clean
+     flutter pub get
+     flutter run
+
+Notes:
+- This configuration sets the same logo for Android 12+ and pre-12, and for iOS.
+- Background colors: light #FFFFFF, dark #121212.
+- If you want a colored background, change 'color' values in pubspec.yaml under 'flutter_native_splash'.

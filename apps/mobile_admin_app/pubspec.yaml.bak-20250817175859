@@ -1,0 +1,42 @@
+name: mobile_admin_app
+description: A new Flutter project.
+publish_to: none
+version: 1.0.0+1
+environment:
+  sdk: ^3.8.1
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  firebase_core: ^3.14.0
+  firebase_auth: ^5.6.0
+  google_sign_in: ^6.3.0
+  cloud_firestore: ^5.6.10
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.4.4
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: assets/icon/app_icon.png
+  remove_alpha_ios: true
+flutter:
+  uses-material-design: true
+  assets:
+  - assets/icon/app_icon.png
+  - assets/icon/flutter_logo.png
+flutter_native_splash:
+  color: '#FFFFFF'
+  color_dark: '#121212'
+  image: assets/icon/flutter_logo.png
+  branding: null
+  android: true
+  ios: true
+  web: false
+  android_12:
+    image: assets/icon/flutter_logo.png
+    icon_background_color: '#FFFFFF'
+    icon_background_color_dark: '#121212'

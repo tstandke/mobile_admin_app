@@ -21,16 +21,17 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
-  flutter_launcher_icons: ^0.13.1
-
-flutter_launcher_icons:
-  android: true
-  ios: true
-  image_path: "assets/icon/app_icon.png"
-  remove_alpha_ios: true
+  flutter_launcher_icons: ^0.14.1
 
 flutter:
   uses-material-design: true
   assets:
-    - assets/icon/app_icon.png
+    - assets/hummerred.png
 
+# Launcher icon generation (Android). Enable ios:true later if/when needed.
+flutter_launcher_icons:
+  android: true
+  ios: false
+  image_path: "assets/hummerred.png"
+  adaptive_icon_background: "#FFFFFF"
+  adaptive_icon_foreground: "assets/hummerred.png"
