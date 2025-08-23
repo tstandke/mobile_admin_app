@@ -1,9 +1,0 @@
-import 'package:flutter/material.dart';
-import 'app.dart';
-import 'integration/composition/composition_firebase.dart' as comp;
-
-void main() {
-  WidgetsFlutterBinding.ensureInitialized();
-  final auth = comp.makeAuthRepository();
-  runApp(AppShell(auth: auth));
-}
